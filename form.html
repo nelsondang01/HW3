@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <title>Crunch Membership Form</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-  <h2>Crunch Membership Form</h2>
-  <h4>Please review the information below before signing up</h4>
+<h2>Membership Form</h2>
+<h4>Please complete the form below</h4>
+
+<p>
+  This form collects basic information for a Crunch membership.
+</p>
+
+<p>
+  The form does not submit data and is for display purposes only.
+</p>
+<form>
 
   <p>
-    Becoming a Crunch member gives you access to a supportive gym environment,
-    modern equipment, and flexible membership options.
+    Name:
+    <input type="text" required>
   </p>
 
   <p>
-    Choose the plan that best fits your fitness goals and availability.
-    A team member can always help you upgrade later.
+    Password:
+    <input type="password" required>
   </p>
 
   <p>
-    Memberships are designed for beginners, experienced lifters, and everyone in between.
+    Membership Type:
+    <br>
+    <input type="radio" name="plan"> Base
+    <input type="radio" name="plan"> Peak
+    <input type="radio" name="plan"> Peak Results
   </p>
 
   <p>
-    Fill out the form below to get started.
+    Extras:
+    <br>
+    <input type="checkbox"> Personal Training
+    <input type="checkbox"> Group Classes
   </p>
-  <form>
-
-    <p>
-      Full Name:
-      <input type="text" name="fullName" required>
-    </p>
-
-    <p>
-      Create Password:
-      <input type="password" name="password" required>
-    </p>
-
-    <p>
-      Choose a Plan:
-      <br>
-      <label><input type="radio" name="plan" required> Base</label>
-      <label><input type="radio" name="plan"> Peak</label>
-      <label><input type="radio" name="plan"> Peak Results</label>
-    </p>
-
-    <p>
-      Add-Ons:
-      <br>
-      <label><input type="checkbox"> Personal Training</label>
-      <label><input type="checkbox"> Group Fitness Classes</label>
-    </p>
-
-    <p>
-      Fitness Interests:
-      <br>
-      <select multiple size="4">
-        <option>Strength Training</option>
-        <option>Cardio</option>
-        <option>HIIT</option>
-        <option>Yoga</option>
-      </select>
-    </p>
-
-    <p>
-      Desired Start Date:
-      <input type="date" required>
-    </p>
-
-    <p>
-      <input type="submit" value="Submit Membership Request">
-    </p>
-
-  </form>
 
   <p>
-    <a href="index.html">Back to Intro Page</a>
+    Fitness Interests:
+    <br>
+    <select multiple size="4">
+      <option>Strength</option>
+      <option>Cardio</option>
+      <option>HIIT</option>
+      <option>Yoga</option>
+    </select>
   </p>
+
+  <p>
+    Start Date:
+    <input type="date" required>
+  </p>
+
+  <p>
+    <input type="submit" value="Submit">
+  </p>
+
+</form>
+
+<p>
+  <a href="index.html">Back to Intro Page</a>
+</p>
 
 </body>
 </html>
