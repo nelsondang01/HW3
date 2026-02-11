@@ -7,8 +7,27 @@
 </head>
 
 <body>
+
   <h2>Crunch Membership Form</h2>
-  <h4>Please complete the fields below</h4>
+  <h4>Please review the information below before signing up</h4>
+
+  <p>
+    Becoming a Crunch member gives you access to a supportive gym environment,
+    modern equipment, and flexible membership options.
+  </p>
+
+  <p>
+    Choose the plan that best fits your fitness goals and availability.
+    A team member can always help you upgrade later.
+  </p>
+
+  <p>
+    Memberships are designed for beginners, experienced lifters, and everyone in between.
+  </p>
+
+  <p>
+    Fill out the form below to get started.
+  </p>
   <form>
 
     <p>
@@ -22,34 +41,34 @@
     </p>
 
     <p>
-      Choose a Plan (Radio Buttons):
+      Choose a Plan:
       <br>
-      <label><input type="radio" name="plan" value="base" required> Base</label>
-      <label><input type="radio" name="plan" value="peak"> Peak</label>
-      <label><input type="radio" name="plan" value="peakresults"> Peak Results</label>
+      <label><input type="radio" name="plan" required> Base</label>
+      <label><input type="radio" name="plan"> Peak</label>
+      <label><input type="radio" name="plan"> Peak Results</label>
     </p>
 
     <p>
-      Add-Ons (Checkboxes):
+      Add-Ons:
       <br>
-      <label><input type="checkbox" name="addons" value="pt"> Personal Training</label>
-      <label><input type="checkbox" name="addons" value="classes"> Group Fitness Classes</label>
+      <label><input type="checkbox"> Personal Training</label>
+      <label><input type="checkbox"> Group Fitness Classes</label>
     </p>
 
     <p>
-      Fitness Interests (Multiple Select - 4 options):
+      Fitness Interests:
       <br>
-      <select name="interests" multiple size="4">
-        <option value="strength">Strength Training</option>
-        <option value="cardio">Cardio</option>
-        <option value="hiit">HIIT</option>
-        <option value="yoga">Yoga</option>
+      <select multiple size="4">
+        <option>Strength Training</option>
+        <option>Cardio</option>
+        <option>HIIT</option>
+        <option>Yoga</option>
       </select>
     </p>
 
     <p>
-      Desired Start Date (HTML5 date validation):
-      <input type="date" name="startDate" required>
+      Desired Start Date:
+      <input type="date" required>
     </p>
 
     <p>
@@ -58,9 +77,9 @@
 
   </form>
 
-  <!-- Relative link back to intro page -->
-  <p><a href="index.html">Back to Intro Page</a></p>
+  <p>
+    <a href="index.html">Back to Intro Page</a>
+  </p>
 
 </body>
 </html>
-
